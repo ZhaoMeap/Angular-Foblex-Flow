@@ -1,0 +1,12 @@
+.toolbar{
+    top: 16px;
+    right: 16px;
+    position: fixed;
+    display: flex;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.button{
+    margin: 5px;
+}
