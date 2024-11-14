@@ -1,7 +1,7 @@
 # Angular Foblex Flow
 
-[Angular](#https://angular.dev/): ^18.2.0
-[Foblex Flow](#https://flow.foblex.com/): "^16.0.5
+Angular: ^18.2.0
+Foblex Flow: ^16.0.5
 
 ## 開發專案
 
