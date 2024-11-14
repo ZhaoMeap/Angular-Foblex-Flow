@@ -1,0 +1,43 @@
+header {
+    padding: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    cursor: move;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 5px 5px 0px 0px;
+
+    .node-icon {
+      width: 16px;
+      height: 16px;
+      font-size: 16px;
+      min-width: 16px;
+    }
+
+    .node-title {
+      display: block;
+      margin-bottom: 4px;
+      line-height: 12px;
+      font-size: 12px;
+    }
+
+    .node-description {
+      font-size: 12px;
+      color: gray;
+    }
+
+    .node-delete{
+      font-size: 12px;
+    }
+}
+
+.f-node-output {
+  width: 16px;
+  height: 16px;
+  background-color: lightblue;
+  border-radius: 4px;
+  border: 1px solid blue;
+  color: lightblue;
+  }

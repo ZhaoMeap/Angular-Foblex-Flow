@@ -1,0 +1,21 @@
+<header>
+    <mat-icon class="node-icon">{{ icon }}</mat-icon>
+    <div class="node-info">
+      <span class="node-title">{{ title }}</span>
+      <div class="node-description">{{ description }}</div>
+    </div>
+    <button mat-icon-button (click)="deleteNode()">
+      <mat-icon>close</mat-icon>
+    </button>
+    @for (output of outputs; track output.key) {
+      <div fNodeOutput [fOutputConnectableSide]="eFConnectableSide.BOTTOM" [fOutputId]="output.key" [isSelfConnectable]="false" (click)="onRemoveConnection(output.key)">
+        <mat-icon>close</mat-icon>
+      </div>
+    }
+</header>
+<body>
+  <app-llm-node *ngIf="type === 'llm'"></app-llm-node>
+  <app-km-node *ngIf="type === 'km'"></app-km-node>
+  <app-gateway-node *ngIf="type === 'gateway'"></app-gateway-node>
+  <app-reasoning-node *ngIf="type === 'reasoning'"></app-reasoning-node>
+</body>
