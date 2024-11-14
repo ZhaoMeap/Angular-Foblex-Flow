@@ -1,0 +1,14 @@
+body {
+  padding: 15px;
+  gap: 8px;
+  cursor: move;
+  background-color: whitesmoke;
+
+  .placeholder {
+    color: grey;
+    display: block;
+    margin-bottom: 4px;
+    line-height: 12px;
+    font-size: 12px;
+  }
+}
