@@ -1,9 +1,8 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, Injector, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { FFlowModule, FZoomDirective, FCanvasComponent, EFConnectionType, EFConnectionBehavior } from '@foblex/flow';
 import { IEntitySummary } from '@foblex/ng-clarc';
-
 
 import { SidebarComponent } from "../sidebar/sidebar.component";
 import { MapbarComponent } from "../mapbar/mapbar.component";
