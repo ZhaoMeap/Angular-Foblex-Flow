@@ -1,0 +1,29 @@
+.sidebar{
+    background-color: white;
+    border: 1px black solid;
+    width: 150px;
+    height: 240px;
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+}
+
+.button{
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    width: 120px;
+}
+
+.button:active{
+    background-color: whitesmoke;
+    border: 1px black solid;
+    padding: 5px;
+    margin: 5px;
+    width: 120px;
+    cursor: pointer
+}
+
+.subtitle{
+    font-size: x-small;
+}
