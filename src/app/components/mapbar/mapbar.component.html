@@ -1,0 +1,17 @@
+<div class="mapbar">
+    <button (click)="onClick(eEventType.ZOOM_IN)" mat-mini-fab class="button" matTooltip="Zoom In" [matTooltipPosition]="'right'">
+        <mat-icon>add</mat-icon>
+    </button>
+    
+    <button (click)="onClick(eEventType.ZOOM_OUT)" mat-mini-fab class="button" matTooltip="Zoom Out" [matTooltipPosition]="'right'">
+        <mat-icon>remove</mat-icon>
+    </button>
+    
+    <button (click)="onClick(eEventType.FIT_TO_SCREEN)" mat-mini-fab class="button" matTooltip="Fit to Screen" [matTooltipPosition]="'right'">
+        <mat-icon>zoom_in_map</mat-icon>
+    </button>
+
+    <button (click)="onClick(eEventType.RESET_SCALE_AND_CENTER)" mat-mini-fab class="button" matTooltip="1:1" [matTooltipPosition]="'right'">
+        <mat-icon>fit_screen</mat-icon>
+    </button>
+</div>
