@@ -1,0 +1,11 @@
+.container {
+    background-color: white;
+    padding: 5px 25px 30px 25px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    cursor: move;
+}
+
+.textarea{
+    width: 100px;
+}
