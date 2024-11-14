@@ -1,0 +1,29 @@
+<app-mapbar (request)="onActionPanelEvent($event)"></app-mapbar>
+<app-sidebar (addNode)="onAddNode($event)"></app-sidebar>
+<app-toolbar></app-toolbar>
+<f-flow fDraggable>
+  <f-background>
+    <f-circle-pattern></f-circle-pattern>
+  </f-background>
+  <f-selection-area></f-selection-area>
+  <f-canvas fZoom>    
+    @for ( connection of nodes; track connection.key){
+      <f-connection [fBehavior]="connectionBehavior" [fConnectionId]="connection.key" [fType]="connectionType" [fOutputId]="connection.from" [fInputId]="connection.to"></f-connection>
+    }
+    <f-connection [fType]="connectionType" fOutputId="output1" fInputId="input1"></f-connection>
+    <app-start-node fNode fDragHandle [fNodePosition]="{ x: 200, y: 200}" fNodeOutput fOutputId="output1" fOutputConnectableSide="right"></app-start-node>
+    <app-end-node fNode fDragHandle [fNodePosition]="{ x: 800, y: 300}" fNodeInput fInputId="input1" fInputConnectableSide="left"></app-end-node>
+    @for (node of nodes; track node.key) {
+      <app-common-node 
+        (delete)="deleteNode(node.id)"
+        [id]="node.id"
+        [type]="node.type"
+        [icon]="node.icon"
+        [title]="node.title"
+        [description]="node.description" 
+        [fNodePosition]="node.position"
+        fNode fDragHandle></app-common-node>
+    }
+  </f-canvas>
+  <f-minimap [fMinSize]="1500"></f-minimap>
+</f-flow>

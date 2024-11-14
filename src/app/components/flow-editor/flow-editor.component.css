@@ -1,0 +1,22 @@
+.f-minimap{
+    bottom: 16px;
+    right: 16px;
+    border: 1px black solid;
+    background-color: #ffffff;
+    opacity: 0.2;
+}
+
+.f-connection {
+    fill: transparent;
+    stroke: black;
+    stroke-width: 1;
+}
+
+.f-snap-connection {
+    /* stroke: whitesmoke; */
+    color: whitesmoke;
+    .f-connection-path {
+      color: whitesmoke;
+      stroke: whitesmoke;
+    }
+  }
